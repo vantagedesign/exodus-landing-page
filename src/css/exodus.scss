@@ -1,0 +1,102 @@
+/* -------------------------------------------------------------------------
+*	EXODUS LANDING PAGE
+*	Stylesheet.
+*	@author Vantage Design
+* 	@version 1.0.0
+*	@license https://github.com/vantagedesign/exodus-landing-page/blob/master/LICENSE
+* ------------------------------------------------------------------------ */
+
+/* Import font */
+@font-face {
+    font-family: 'Play';
+    src: url('../webfonts/Play-Regular.eot');
+    src: url('../webfonts/Play-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../webfonts/Play-Regular.woff2') format('woff2'),
+        url('../webfonts/Play-Regular.woff') format('woff'),
+        url('../webfonts/Play-Regular.ttf') format('truetype'),
+        url('../webfonts/Play-Regular.svg#Play-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Load Bootstrap */
+$primary: #eccc68;
+$dark: #212121;
+
+$border-radius: 0;
+
+@import "../plugins/bootstrap/scss/bootstrap";
+
+$font-family-paragraphs: $font-family-sans-serif;
+$font-family-headings: 'Play', $font-family-sans-serif;
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+	font-family: $font-family-headings;
+}
+
+.fss-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-color: $dark;
+}
+
+.btn-scroller{
+	border-width: 2px;
+	height: 50px;
+	line-height:30px;
+	transition: all 0.2s ease;
+	&:hover{
+		transform: translateY(5px);
+	}
+}
+
+h1:not(.display-1){
+	display: inline-block;
+	position: relative;
+	padding-bottom: 10px;
+	&:before{
+		display: block;
+		position: absolute;
+		content: '';
+		background-color: $primary;
+		height:2px;
+		width: 80%;
+		bottom: 0;
+		left: 10%;
+	}
+}
+
+.navbar{
+	.nav-link{
+		position: relative;
+		margin: 0 5px;
+		display: inline-block;
+		&:before{
+			display: block;
+			position: absolute;
+			content: '';
+			background-color: $primary;
+			height:1px;
+			width: 0;
+			bottom: 0;
+			left: 10%;
+			transition: all 0.2s ease-out;
+		}
+		&:hover:before{
+			width: 90%;
+		}
+	}
+	.nav-link, .navbar-brand{
+		font-family: $font-family-headings;
+	}
+	.nav-link{
+		text-transform: uppercase;
+	}
+}
+
+.btn{
+	font-family: $font-family-headings;
+	text-transform: uppercase;
+}
