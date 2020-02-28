@@ -28,8 +28,8 @@ $(document).ready(function(){
     width: 1.1,
     height: 1.1,
     depth: 15,
-    segments: 19,
-    slices: 8,
+    segments: 160,
+    slices: 80,
     xRange: .25,
     yRange: .25,
     zRange: 1,
@@ -132,7 +132,7 @@ $(document).ready(function(){
   function createMesh() {
     scene.remove(mesh);
     renderer.clear();
-    geometry = new FSS.Plane(MESH.width * renderer.width, MESH.height * renderer.height, Math.round(renderer.width / 80), Math.round(renderer.height / 160));
+    geometry = new FSS.Plane(MESH.width * renderer.width, MESH.height * renderer.height, Math.round(renderer.width / MESH.slices), Math.round(renderer.height / MESH.segments));
     material = new FSS.Material(MESH.ambient, MESH.diffuse);
     mesh = new FSS.Mesh(geometry, material);
     scene.add(mesh);

@@ -8373,7 +8373,7 @@ h1:not(.display-1) {
     height: 1px;
     width: 0;
     bottom: 0;
-    left: 10%;
+    left: 5%;
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out; }
   .navbar .nav-link:hover:before {
