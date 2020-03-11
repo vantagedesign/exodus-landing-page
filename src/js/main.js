@@ -1,3 +1,8 @@
+/* -------------------------------------------------------------------------
+* EXODUS LANDING PAGE | @version 1.0.0 | @author Vantage Design | @license https://github.com/vantagedesign/exodus-landing-page/blob/master/LICENSE
+* JavaScript.
+* ------------------------------------------------------------------------ */
+
 $(document).ready(function(){
 
   // Initialize icons
@@ -18,6 +23,14 @@ $(document).ready(function(){
     } 
   });
 
+
+  // Viewport height fix
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+  window.addEventListener('resize', () => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  });
 
   // Initialize FSS
 
