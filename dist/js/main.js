@@ -1,3 +1,8 @@
+/* -------------------------------------------------------------------------
+* EXODUS LANDING PAGE | @version 1.0.0 | @author Vantage Design | @license https://github.com/vantagedesign/exodus-landing-page/blob/master/LICENSE
+* JavaScript.
+* ------------------------------------------------------------------------ */
+
 $(document).ready(function(){
 
   // Initialize icons
