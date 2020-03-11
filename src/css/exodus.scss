@@ -1,9 +1,6 @@
 /* -------------------------------------------------------------------------
-*	EXODUS LANDING PAGE
+*	EXODUS LANDING PAGE | @version 1.0.0 | @author Vantage Design | @license https://github.com/vantagedesign/exodus-landing-page/blob/master/LICENSE
 *	Stylesheet.
-*	@author Vantage Design
-* 	@version 1.0.0
-*	@license https://github.com/vantagedesign/exodus-landing-page/blob/master/LICENSE
 * ------------------------------------------------------------------------ */
 
 /* Import font */
@@ -33,6 +30,12 @@ $font-family-headings: 'Play', $font-family-sans-serif;
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 	font-family: $font-family-headings;
 }
+
+.vh-100{
+	height: 100vh !important;
+	height: calc(var(--vh, 1vh) * 100) !important;	
+}
+
 
 .fss-container {
   position: absolute;

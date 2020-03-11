@@ -6,7 +6,10 @@
     "scripts": {
         "dev": "gulp dev",
         "build": "gulp build",
-        "clean": "gulp clean"
+        "clean": "gulp clean",
+        "hugo": "hugo",
+        "docs:server": "cd docs && hugo server -D",
+        "docs:build": "cd docs && hugo"
     },
     "author": "Vantage Design",
     "devDependencies": {
@@ -20,6 +23,10 @@
         "gulp-plumber": "^1.2.1",
         "gulp-rename": "^2.0.0",
         "gulp-sass": "^4.0.2",
-        "gulp-uglify": "^3.0.2"
+        "gulp-uglify": "^3.0.2",
+        "hugo-bin": "^0.51.2"
+    },
+    "hugo-bin": {
+        "buildTags": "extended"
     }
 }
