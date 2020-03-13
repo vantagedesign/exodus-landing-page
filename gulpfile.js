@@ -216,5 +216,11 @@ gulp.task('dev',
 	)
 );
 
+/* Exposed tasks */
+gulp.task('build',
+	gulp.series(
+		init
+	)
+);
 
 gulp.task('clean', clean_dist);
