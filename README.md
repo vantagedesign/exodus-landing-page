@@ -24,7 +24,7 @@ Exodus is a landing page with an unconventional background to catch your user's 
 - [Demo](https://docs.vantage-design.com/exodus/demo)
 - [Documentation](https://docs.vantage-design.com/exodus)
 - [Issues](https://github.com/vantagedesign/exodus-landing-page/issues)
-- [License](https://github.com/vantagedesign/exodus-landing-page/blob/master/LICENSE)
+- [License](https://github.com/vantagedesign/exodus-landing-page/blob/master/LICENSE.md)
 
 
 ## Reporting issues
@@ -39,7 +39,7 @@ We use GitHub Issues as the official bug tracker for the Exodus landing page. Wh
 ## Licensing
 
 - Copyright 2020 [Vantage Design](https://vantage-design.com)
-- Licensed under MIT (https://github.com/vantagedesign/exodus-landing-page/blob/master/LICENSE)
+- Licensed under MIT (https://github.com/vantagedesign/exodus-landing-page/blob/master/LICENSE.md)
 
 ## Useful links
 
