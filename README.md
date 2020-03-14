@@ -1,4 +1,4 @@
-# [Exodus landing page](https://docs.vantage-design.com/exodus)
+# [Exodus landing page](https://docs.vantage-design.com/exodus/demo)
 
 ![Product thumbnail](https://github.com/vantagedesign/assets/blob/master/exodus-landing-page/exodus-thumbnail-shadow.png)
 
@@ -7,8 +7,9 @@ Exodus is a landing page with an unconventional background to catch your user's 
 
 
 ## Demo & documentation
-[Exodus documentation](https://docs.vantage-design.com/exodus)
-[Exodus demo](https://docs.vantage-design.com/exodus/demo)
+
+- [Exodus documentation](https://docs.vantage-design.com/exodus)
+- [Exodus demo](https://docs.vantage-design.com/exodus/demo)
 
 
 
