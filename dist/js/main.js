@@ -8,37 +8,45 @@ $(document).ready(function(){
   // Initialize icons
   feather.replace()
 
-    // Enable smooth scrolling
-    $('a[href*="#"]')
-    .not('[href="#"]')
-    .not('[href="#0"]')
-    .not("[data-toggle='tab']")
-    .not("[data-toggle='collapse']")
-    .click(function(event) {
-        if (
-          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-          && 
-          location.hostname == this.hostname
-          ) {
-          var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        if (target.length) {
-          event.preventDefault();
-          $('html, body').animate({
-            scrollTop: target.offset().top
-          }, 1000, function() {
-            var $target = $(target);
-            $target.focus();
-            if ($target.is(":focus")) {
-              return false;
-            } else {
-              $target.attr('tabindex','-1');
-              $target.focus();
-            };
-          });
-        }
-      }
-    });
+  /* If navbar is transparent unless scrolled, make it opaque when collapsing */
+  $('.navbar-collapse').on('show.bs.collapse', function () {
+    $(this).parents('.navbar').addClass("show");
+  })
+  $('.navbar-collapse').on('hide.bs.collapse', function () {
+    $(this).parents('.navbar').removeClass("show");
+  })
+
+  // Enable smooth scrolling
+  $('a[href*="#"]')
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .not("[data-toggle='tab']")
+  .not("[data-toggle='collapse']")
+  .click(function(event) {
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+      ) {
+      var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    if (target.length) {
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000, function() {
+        var $target = $(target);
+        $target.focus();
+        if ($target.is(":focus")) {
+          return false;
+        } else {
+          $target.attr('tabindex','-1');
+          $target.focus();
+        };
+      });
+    }
+  }
+});
 
   // Viewport height fix
   var vh = window.innerHeight * 0.01;

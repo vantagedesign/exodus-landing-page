@@ -99,6 +99,15 @@ h1:not(.display-1){
 	}
 }
 
+/* Styling for making background and shadow visible on collapse */
+.navbar-transparent{
+	transition: background-color 0.15 ease-out, box-shadow 0.15 ease-out;
+	&:not(.show){
+		background-color: transparent !important;
+		box-shadow: none !important;
+	}
+}
+
 .btn{
 	font-family: $font-family-headings;
 	text-transform: uppercase;

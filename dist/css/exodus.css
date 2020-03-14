@@ -8387,6 +8387,17 @@ h1:not(.display-1) {
 .navbar .nav-link {
   text-transform: uppercase; }
 
+/* Styling for making background and shadow visible on collapse */
+.navbar-transparent {
+  -webkit-transition: background-color 0.15 ease-out, -webkit-box-shadow 0.15 ease-out;
+  transition: background-color 0.15 ease-out, -webkit-box-shadow 0.15 ease-out;
+  transition: background-color 0.15 ease-out, box-shadow 0.15 ease-out;
+  transition: background-color 0.15 ease-out, box-shadow 0.15 ease-out, -webkit-box-shadow 0.15 ease-out; }
+  .navbar-transparent:not(.show) {
+    background-color: transparent !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important; }
+
 .btn {
   font-family: "Play", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase; }
