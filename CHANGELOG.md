@@ -1,3 +1,7 @@
+## Version 1.0.2
+
+- [FIX] Fixed layout of newsletter signup form.
+
 ## Version 1.0.1
 
 - [FIX] Added new class `.navbar-transparent` to add navbar styling (bg, shadow) when expanding.
