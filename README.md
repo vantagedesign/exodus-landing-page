@@ -1,6 +1,6 @@
 # [Exodus landing page](https://docs.vantage-design.com/exodus)
 
-![Product thumbnail](https://github.com/vantagedesign/assets/blob/master/exodus-landing-page/exodus-thumbnail-shadow.png)
+![Product thumbnail](https://raw.githubusercontent.com/vantagedesign/assets/master/exodus-landing-page/exodus-thumbnail-shadow.png)
 
 
 Exodus is a landing page with an unconventional background to catch your user's attention and draw them further into your content. Featuring sections for about us, projects and contact, you'll be capable of providing your visitors with the necessary information. Built with Bootstrap 4, you can easily extend and customize the page yourself. Powered by SASS and a powerful GulpJS workflow, you can modify Bootstrap's source code and variables to make the page truly yours. Or simply take the existing style and change the content to your needs. It's all up to you.
