@@ -1,5 +1,5 @@
 /* -------------------------------------------------------------------------
-*	EXODUS LANDING PAGE | @version 1.0.0 | @author Vantage Design | @license https://github.com/vantagedesign/exodus-landing-page/blob/master/LICENSE.md
+*	EXODUS LANDING PAGE | @version 1.0.4 | @author Vantage Design | @license https://github.com/vantagedesign/exodus-landing-page/blob/master/LICENSE.md
 *	Stylesheet.
 * ------------------------------------------------------------------------ */
 /* Import font */
@@ -8386,6 +8386,80 @@ h1:not(.display-1) {
 
 .navbar .nav-link {
   text-transform: uppercase; }
+
+/* Animated navbar toggler, transforming from a hamburger to an X */
+.navbar-toggler {
+  border: none; }
+  .navbar-toggler > .navbar-toggler-icon {
+    position: relative;
+    background-image: none !important;
+    background: transparent;
+    height: 3px;
+    width: 18px; }
+    .navbar-toggler > .navbar-toggler-icon:before, .navbar-toggler > .navbar-toggler-icon:after {
+      background: #f8f9fa;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      -webkit-transition: all 0.15s ease-out;
+      transition: all 0.15s ease-out;
+      width: 100%; }
+    .navbar-toggler > .navbar-toggler-icon:before {
+      top: 0;
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .navbar-toggler > .navbar-toggler-icon:after {
+      top: 0;
+      -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+  .navbar-toggler.collapsed .navbar-toggler-icon {
+    background-image: none !important;
+    background: #f8f9fa; }
+    .navbar-toggler.collapsed .navbar-toggler-icon:before {
+      top: -6px;
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none; }
+    .navbar-toggler.collapsed .navbar-toggler-icon:after {
+      top: 6px;
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none; }
+  .navbar-toggler.collapsed:hover > .navbar-toggler-icon:before {
+    top: -8px; }
+  .navbar-toggler.collapsed:hover > .navbar-toggler-icon:after {
+    top: 8px; }
+
+/* Styling for making background and shadow visible on collapse */
+.navbar-transparent {
+  -webkit-transition: background-color 0.15 ease-out, -webkit-box-shadow 0.15 ease-out;
+  transition: background-color 0.15 ease-out, -webkit-box-shadow 0.15 ease-out;
+  transition: background-color 0.15 ease-out, box-shadow 0.15 ease-out;
+  transition: background-color 0.15 ease-out, box-shadow 0.15 ease-out, -webkit-box-shadow 0.15 ease-out; }
+  .navbar-transparent:not(.show) {
+    background-color: transparent !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important; }
+
+/* Styling for making background and shadow visible on scroll */
+.navbar-scrollstyle {
+  -webkit-transition: background-color 0.15s ease-out, -webkit-box-shadow 0.15s ease-out;
+  transition: background-color 0.15s ease-out, -webkit-box-shadow 0.15s ease-out;
+  transition: background-color 0.15s ease-out, box-shadow 0.15s ease-out;
+  transition: background-color 0.15s ease-out, box-shadow 0.15s ease-out, -webkit-box-shadow 0.15s ease-out; }
+  .navbar-scrollstyle .navbar-nav {
+    -webkit-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out; }
+  .navbar-scrollstyle:not(.scrolled):not(.show) {
+    background-color: transparent !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important; }
+    .navbar-scrollstyle:not(.scrolled):not(.show) .navbar-nav {
+      padding-top: 10px;
+      padding-bottom: 10px; }
 
 .btn {
   font-family: "Play", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";

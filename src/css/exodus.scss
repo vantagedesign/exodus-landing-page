@@ -1,5 +1,5 @@
 /* -------------------------------------------------------------------------
-*	EXODUS LANDING PAGE | @version 1.0.0 | @author Vantage Design | @license https://github.com/vantagedesign/exodus-landing-page/blob/master/LICENSE.md
+*	EXODUS LANDING PAGE | @version 1.0.4 | @author Vantage Design | @license https://github.com/vantagedesign/exodus-landing-page/blob/master/LICENSE.md
 *	Stylesheet.
 * ------------------------------------------------------------------------ */
 
@@ -19,6 +19,7 @@
 /* Load Bootstrap */
 $primary: #eccc68;
 $dark: #212121;
+$light: #f8f9fa;
 
 $border-radius: 0;
 
@@ -35,7 +36,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 	height: 100vh !important;
 	height: calc(var(--vh, 1vh) * 100) !important;	
 }
-
 
 .fss-container {
   position: absolute;
@@ -96,6 +96,82 @@ h1:not(.display-1){
 	}
 	.nav-link{
 		text-transform: uppercase;
+	}
+}
+
+/* Animated navbar toggler, transforming from a hamburger to an X */
+.navbar-toggler{
+	border:none;
+	& > .navbar-toggler-icon{
+		position: relative;
+		background-image: none !important;
+		background: transparent;
+		height: 3px;
+		width: 18px;
+		&:before, &:after{
+			background: $light;
+			content: '';
+			display: block;
+			height: 100%;
+			position: absolute;
+			transition: all 0.15s ease-out;
+			width: 100%;
+		}
+		&:before{
+			top: 0;
+			transform: rotate(45deg);
+		}
+		&:after{
+			top: 0;
+			transform: rotate(-45deg);
+		}
+	}
+	&.collapsed{
+		.navbar-toggler-icon{
+			background-image: none !important;
+			background: $light;
+			&:before{
+				top: -6px;
+				transform: none;
+			}
+			&:after{
+				top: 6px;
+				transform: none;
+			}
+		}
+		&:hover{
+			& > .navbar-toggler-icon:before{
+				top: -8px;
+			}
+			& > .navbar-toggler-icon:after{
+				top: 8px;
+			}
+		}
+	}
+}
+
+/* Styling for making background and shadow visible on collapse */
+.navbar-transparent{
+	transition: background-color 0.15 ease-out, box-shadow 0.15 ease-out;
+	&:not(.show){
+		background-color: transparent !important;
+		box-shadow: none !important;
+	}
+}
+
+/* Styling for making background and shadow visible on scroll */
+.navbar-scrollstyle{
+	transition: background-color 0.15s ease-out, box-shadow 0.15s ease-out;
+	.navbar-nav{
+		transition: all 0.15s ease-out;
+	}
+	&:not(.scrolled):not(.show){
+		background-color: transparent !important;
+		box-shadow: none !important;
+		.navbar-nav{
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
 	}
 }
 

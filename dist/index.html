@@ -10,7 +10,7 @@
 	<!-- Title -->
 	<title>Exodus</title>
 
-	<!-- EXODUS LANDING PAGE | @version 1.0.0 | @author Vantage Design | @license https://github.com/vantagedesign/exodus-landing-page/blob/master/LICENSE.md.md.md -->
+	<!-- EXODUS LANDING PAGE | @version 1.0.4 | @author Vantage Design | @license https://github.com/vantagedesign/exodus-landing-page/blob/master/LICENSE.md -->
 
 </head>
 <body>
@@ -21,7 +21,7 @@
 		<div class="fss-container" id="fss-container"></div>
 		
 		<!-- Navbar -->
-		<nav class="navbar navbar-expand-lg navbar-dark">
+		<nav class="navbar navbar-expand-lg navbar-dark navbar-transparent bg-dark shadow-sm">
 		    <div class="container">
 		        <div>
 		            <a class="navbar-brand" href="#">Exodus</a>
@@ -36,11 +36,17 @@
 		            	<li class="nav-item mb-2 mr-2">
 		            	    <a class="nav-link" href="https://vantage-design.com" target="_blank">More products</a>
 		            	</li>
-		                <li class="nav-item mb-2 mr-3">
+		                <li class="nav-item">
 		                    <a class="nav-link" href="https://docs.vantage-design.com/exodus" target="_blank">Docs</a>
 		                </li>
+		                <li class="nav-item mb-2 mr-3">
+		                	<a class="nav-link" href="https://github.com/vantagedesign/exodus-landing-page" target="_blank">
+		                		<i data-feather="github"></i>
+		                		<span class="sr-only">GitHub</span>
+		                	</a>
+		                </li>
 		                <li class="nav-item">
-		                    <a class="btn btn-primary" href="https://github.com/vantagedesign/exodus-landing-page" target="_blank">Download</a>
+		                    <a class="btn btn-primary" href="https://github.com/vantagedesign/exodus-landing-page/releases" target="_blank">Download</a>
 		                </li>
 		            </ul>
 		        </div>
@@ -59,6 +65,7 @@
 		<div class="scroller text-center pb-5">
 			<a href="#about" class="btn rounded-circle btn-outline-primary btn-scroller">
 				<i data-feather="chevrons-down"></i>
+				<span class="sr-only">Scroll down</span>
 			</a>
 		</div>
 
@@ -111,9 +118,9 @@
 			<div class="row py-3 mb-5 justify-content-center">
 
 				<div class="col-md-4 mt-4">
-					<div class="card text-center border-primary">
+					<div class="card text-center border-0">
 						<div class="card-img-top mx-auto">
-							<img src="img/demo-article-1.jpg" alt="" class="img-fluid">
+							<img src="img/demo-article-1.jpg" alt="Article image" class="img-fluid">
 						</div>
 						<div class="card-body pt-2">
 							<h6 class="text-muted text-uppercase">Software</h6>
@@ -131,9 +138,9 @@
 				</div>
 
 				<div class="col-md-4 mt-4">
-					<div class="card text-center border-primary h-100">
+					<div class="card text-center border-0 h-100">
 						<div class="card-img-top mx-auto">
-							<img src="img/demo-article-2.jpg" alt="" class="img-fluid">
+							<img src="img/demo-article-2.jpg" alt="Article image" class="img-fluid">
 						</div>
 						<div class="card-body pt-2">
 							<h6 class="text-muted text-uppercase">Cinematography</h6>
@@ -151,9 +158,9 @@
 				</div>
 
 				<div class="col-md-4 mt-4">
-					<div class="card text-center border-primary h-100">
+					<div class="card text-center border-0 h-100">
 						<div class="card-img-top mx-auto">
-							<img src="img/demo-article-3.jpg" alt="" class="img-fluid">
+							<img src="img/demo-article-3.jpg" alt="Article image" class="img-fluid">
 						</div>
 						<div class="card-body pt-2">
 							<h6 class="text-muted text-uppercase">Case study</h6>
@@ -192,26 +199,32 @@
 
 			        <div class="card bg-dark">
 			            <div class="card-body pb-0">
-			                <div class="row no-gutters">
-			                    <div class="col-9">
-			                        <div class="form-group">
-			                            <input type="email" placeholder="Email address" class="form-control" id="inputDefault1">
-			                            <!--<small class="form-text text-muted">By signing up you agree to our privacy policy.</small>-->
-			                        </div>
-			                    </div>
-			                    <div class="col-3">
-			                        <button class="btn btn-block btn-primary ml-1 text-dark">
-			                            Sign up
-			                        </button>
-			                    </div>
+			                <div class="d-flex align-items-start">
+		                        <div class="form-group flex-grow-1">
+		                            <input type="email" placeholder="Email address" class="form-control" id="inputDefault1">
+		                            <!--<small class="form-text text-muted">By signing up you agree to our privacy policy.</small>-->
+		                        </div>
+		                        <button class="btn btn-primary ml-1 text-dark flex-shrink-0">
+		                            Sign up
+		                        </button>
 			                </div>
 			            </div>
 			        </div>
 
 			        <div class="text-center">
 			            <p class="lead mt-3 mb-0">Or follow us on:</p>
-			            <a href="https://www.facebook.com/vantagedesignofficial/" target="_blank" class="btn text-white m-1"><i data-feather="facebook"></i></a>
-			            <a href="https://www.instagram.com/vantagedesignofficial/" target="_blank" class="btn text-white m-1"><i data-feather="instagram"></i></a>
+			            <a href="https://www.facebook.com/vantagedesignofficial/" target="_blank" class="btn text-white m-1">
+			            	<i data-feather="facebook"></i>
+							<span class="sr-only">Facebook</span>
+			            </a>
+			            <a href="https://www.instagram.com/vantagedesignofficial/" target="_blank" class="btn text-white m-1">
+			            	<i data-feather="instagram"></i>
+							<span class="sr-only">Instagram</span>
+			            </a>
+			            <a href="https://github.com/vantagedesign" target="_blank" class="btn text-white m-1">
+			            	<i data-feather="github"></i>
+							<span class="sr-only">GitHub</span>
+			            </a>
 			        </div>
 
 			        <h6 class="mt-2 text-center">
@@ -235,7 +248,7 @@
 		<hr class="border-primary">
 
 		<h6 class=" text-muted text-center">
-			© 2020 Copyright YOUR COMPANY
+			© 2020 Copyright Vantage Design
 		</h6>
 
 	</footer>
