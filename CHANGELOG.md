@@ -1,3 +1,7 @@
+## Version 1.0.5
+- Updated Bootstrap to v4.5
+- Improved animation performance
+
 ## Version 1.0.4
 - [ADD] Added `.navbar-scrollstyle` class and JS to add navbar styling (bg, shadow) on scroll.
 - [ADD] Styled navbar toggler

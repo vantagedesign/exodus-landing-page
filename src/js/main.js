@@ -1,5 +1,5 @@
 /* -------------------------------------------------------------------------
-* EXODUS LANDING PAGE | @version 1.0.4 | @author Vantage Design | @license https://github.com/vantagedesign/exodus-landing-page/blob/master/LICENSE.md
+* EXODUS LANDING PAGE | @version 1.0.5 | @author Vantage Design | @license https://github.com/vantagedesign/exodus-landing-page/blob/master/LICENSE.md
 * JavaScript.
 * ------------------------------------------------------------------------ */
 
